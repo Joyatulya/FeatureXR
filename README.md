@@ -1,3 +1,11 @@
-# FeatureXR
+FeatureXR: A Hybrid Approach to Feature Extraction for Chest X-ray Analysis
+FeatureXR addresses the inherent challenges in traditional chest X-ray interpretation, which often relies on subjective qualitative assessments prone to inter-observer variability. This project introduces a novel hybrid approach to feature extraction from chest radiographs, aiming to provide quantitative and objective metrics that can augment clinical decision-making and facilitate advanced medical image analysis.
 
-FeatureXR is a hybrid approach to a medical computer vision problem.
+By integrating both classical image processing techniques and modern deep learning methodologies, FeatureXR seeks to capture a comprehensive set of features indicative of various thoracic conditions. The project's core lies in its ability to automatically delineate lung boundaries and extract clinically relevant parameters, such as lung dimensions, area ratios, and cardiothoracic ratio. Furthermore, FeatureXR incorporates sophisticated analysis of the costophrenic angles, providing quantitative measures of their size and orientation, which are crucial indicators in several respiratory and pleural diseases.
+
+The LungIntepretation module within FeatureXR exemplifies this hybrid approach by employing contour analysis on segmented lung masks to derive a suite of quantitative features. This module calculates metrics like the lung vertical span ratio, area ratio between lungs, height-to-width ratio of the thorax, cardiothoracic ratio (both linear and area-based), and precise measurements of the costophrenic angles. These features offer a granular and objective representation of the thoracic anatomy, potentially enabling:
+
+Improved diagnostic accuracy: Quantitative metrics can aid in the early detection and differentiation of various pulmonary pathologies.
+Objective disease monitoring: Longitudinal analysis of extracted features can facilitate the tracking of disease progression or response to treatment.
+Enhanced research capabilities: The provision of quantifiable data opens avenues for large-scale studies and the development of more sophisticated diagnostic algorithms.
+FeatureXR is intended as a valuable resource for radiologists, medical imaging researchers, and developers seeking to leverage the power of computer vision for advanced chest X-ray analysis. By providing a robust and automated framework for feature extraction, FeatureXR contributes to the ongoing advancement of medical image understanding and its translation into improved patient care.
